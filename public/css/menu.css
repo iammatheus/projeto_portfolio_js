@@ -1,0 +1,44 @@
+/* corpo do menu */
+.menu-aside {
+    background-color: #3f3f3f;
+    padding: 5rem 10rem;
+}
+
+/* imagem do perfil e nome */
+.imagem-perfil img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.perfil p {
+    margin: 20px auto;
+}
+
+
+/* menu desktop */
+nav ul li {
+    list-style: none;
+}
+nav.menu-desktop ul li a {
+    display: block;
+    padding: 1.3rem 0;
+    margin: 10px 0;
+}
+nav.menu-desktop ul .navigation {
+    margin-bottom: 50px;
+}
+
+
+/* menu mobile */
+nav.menu-mobile {
+    display: none;
+}
+nav.menu-mobile ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav.menu-mobile ul li{
+    padding: 1rem 1rem;
+}

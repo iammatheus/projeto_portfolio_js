@@ -1,0 +1,43 @@
+/* MEDIA QUERIES - ALTURA ENTRE 0 E 700px */
+
+@media (max-height: 700px) and (min-height: 0px) {
+    .menu-aside{
+        height: 600px;
+    }
+    .principal {
+        height: 600px;
+    }
+}
+
+
+/* MEDIA QUERIES - WIDTH = 768PX */
+@media (max-width: 768px) {
+    .principal {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+    }
+    .menu-aside {
+        padding: 3rem;
+    }
+    .imagem-perfil {
+        justify-content: center;
+        display: inline-block;
+     }
+     .perfil p {
+        width: max-content;
+    }
+    nav.menu-desktop{
+        display: none;
+    }
+    nav.menu-mobile{
+        display: block;
+    }
+    nav.menu-mobile ul {
+        justify-content: center;
+    }
+    
+}

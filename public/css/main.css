@@ -1,0 +1,41 @@
+/* reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    color: white;
+    background-color: #333333;
+}
+:root {
+    font-size: 62.5%;
+}
+body,
+input,
+button,
+textarea,
+p {
+  font: 400 1.6rem/1 'Sarala', sans-serif;
+}
+a {
+    text-decoration: none;
+    color:  #AEAEAE;
+    cursor: pointer;
+}
+input[type="radio"]{
+    display: none;
+}
+
+/* container principal - quadrado contendo menu e works */
+.principal {
+    display: flex;
+    width: 90vw;
+    height: 85vh;
+    background-color: #383838;
+    position: absolute;
+    top: 8%;
+    left:50%;
+    transform: translate(-50%, 0%);
+}

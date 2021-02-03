@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Portfólio</title>
+    <link rel="stylesheet" href="../../public/css/main.css">
+    <link rel="stylesheet" href="../../public/css/menu.css">
+    <link rel="stylesheet" href="../../public/css/modal.css">
+    <link rel="stylesheet" href="../../public/css/mediaQueries.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal_content">
+            <img src="" alt="" id="modal_img">
+        </div>
+        <span id="bt_close">&times;</span>
+    </div>
+
+    <section class="principal">
+        <aside class="menu-aside">
+            <div class="perfil">
+                <div class="imagem-perfil">
+                     <img src="../../public/images/perfil.jfif" alt=""> 
+                </div>
+                <p>Matheus Ferreira</p>
+            </div>
+
+            <!-- menu desktop -->
+            <nav class="menu-desktop">
+                <ul>
+                    <div class="navigation" id="navigation" onclick="navigation()">
+                        <input type="radio" id="logo" name="options" value="logo">
+                        <li><label for="logo"><a style="color: #FD7A7A">Logo</a></label></li>
+
+                        <input type="radio" id="banner" name="options" value="banner">
+                        <li><label for="banner"><a>Banner</a></label></li>
+
+                        <input type="radio" id="layout" name="options" value="layout">
+                        <li><label for="layout"><a>Layout</a></label></li>
+
+                        <input type="radio" id="card" name="options" value="card">
+                        <li><label for="card"><a>Cards</a></label></li>
+                    </div>
+                    <div class="other">
+                        <li><a href="#">Contact</a></li>
+                    </div>
+                </ul>
+            </nav>
+
+            <!-- menu mobile -->
+            <nav class="menu-mobile">
+                <ul>
+                    <input type="radio" id="logo" name="options" value="logo">
+                    <li><label for="logo"><a style="color: #FD7A7A">Logo</a></label></li>
+
+                    <input type="radio" id="banner" name="options" value="banner">
+                    <li><label for="banner"><a>Banner</a></label></li>
+
+                    <input type="radio" id="layout" name="options" value="layout">
+                    <li><label for="layout"><a>Layout</a></label></li>
+
+                    <input type="radio" id="card" name="options" value="card">
+                    <li><label for="card"><a>Cards</a></label></li>
+
+                    <div class="other">
+                        <li><a href="#">Contact</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </aside>
+
+        <article class="works">
+            <header>
+                <h2 id="titulo">Logo</h2>
+                <span class="line"></span>
+            </header>
+            
+            <div class="container" id="logos">
+                <div class="work-image"><img src="../../public/images/9.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/2.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/3.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/4.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/5.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/6.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/7.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/8.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/1.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/2.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/3.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/4.jpg" class="small_img" alt=""></div>
+            </div>
+            <div class="container" id="banners">
+                <div class="work-image"><img src="../../public/images/5.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/8.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/1.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/3.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/4.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/7.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/9.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/6.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/5.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/8.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/1.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/3.jpg" class="small_img" alt=""></div>
+            </div>
+            <div class="container" id="layouts">
+                <div class="work-image"><img src="../../public/images/8.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/1.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/3.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/4.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/9.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/2.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/5.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/7.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/8.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/1.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/3.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/4.jpg" class="small_img" alt=""></div>
+            </div>
+            <div class="container" id="cards">
+                <div class="work-image"><img src="../../public/images/6.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/5.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/1.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/3.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/4.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/8.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/9.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/2.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/6.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/5.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/1.jpg" class="small_img" alt=""></div>
+                <div class="work-image"><img src="../../public/images/3.jpg" class="small_img" alt=""></div>
+            </div>
+        </article>
+    </section>
+    
+    <script src="../../public/scripts/works-images.js"></script>
+    <script src="../../public/scripts/modal.js"></script>
+</body>
+</html>
