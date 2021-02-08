@@ -1,6 +1,7 @@
 /* corpo do menu */
 .menu-aside {
     background-color: #3f3f3f;
+    animation: menu-aside .3s ease-in;
     padding: 5rem 10rem;
 }
 

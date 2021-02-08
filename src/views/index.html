@@ -6,8 +6,10 @@
     <title>Projeto Portfólio</title>
     <link rel="stylesheet" href="../../public/css/main.css">
     <link rel="stylesheet" href="../../public/css/menu.css">
-    <link rel="stylesheet" href="../../public/css/modal.css">
+    <link rel="stylesheet" href="../../public/css/works-modal.css">
+    <link rel="stylesheet" href="../../public/css/contact.css">
     <link rel="stylesheet" href="../../public/css/mediaQueries.css">
+    <link rel="stylesheet" href="../../public/css/animations.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -43,9 +45,9 @@
 
                         <input type="radio" id="card" name="options" value="card">
                         <li><label for="card"><a>Cards</a></label></li>
-                    </div>
-                    <div class="other">
-                        <li><a href="#">Contact</a></li>
+
+                        <input type="radio" id="contact" name="options" value="contact">
+                        <li><label for="contact"><a>Contact</a></label></li>
                     </div>
                 </ul>
             </nav>
@@ -65,19 +67,18 @@
                     <input type="radio" id="card" name="options" value="card">
                     <li><label for="card"><a>Cards</a></label></li>
 
-                    <div class="other">
-                        <li><a href="#">Contact</a></li>
-                    </div>
+                    <input type="radio" id="contact" name="options" value="contact">
+                    <li><label for="contact"><a>Contact</a></label></li>
                 </ul>
             </nav>
         </aside>
 
-        <article class="works">
+        <!-- visualização dos trabalhos -->
+        <section class="works">
             <header>
                 <h2 id="titulo">Logo</h2>
-                <span class="line"></span>
             </header>
-            
+         
             <div class="container" id="logos">
                 <div class="work-image"><img src="../../public/images/9.jpg" class="small_img" alt=""></div>
                 <div class="work-image"><img src="../../public/images/2.jpg" class="small_img" alt=""></div>
@@ -134,7 +135,40 @@
                 <div class="work-image"><img src="../../public/images/1.jpg" class="small_img" alt=""></div>
                 <div class="work-image"><img src="../../public/images/3.jpg" class="small_img" alt=""></div>
             </div>
-        </article>
+
+            <!-- aba contato -->
+            <div class="contact" id="contacts">
+                <form>
+                    <h3>Faça um orçamento!</h3>
+                    <div class="select">
+                        <select name="servicos" id="servicos" class="border-gradient" required>
+                            <option>Selecione uma opção</option>
+                            <option>Logo</option>
+                            <option>Banner</option>
+                            <option>Layout</option>
+                            <option>Cards</option>
+                        </select>
+                    </div>
+    
+                    <div>
+                        <input type="text" name="nome" id="nome" class="border-gradient" placeholder="Nome" required>
+                    </div>
+                    <div>
+                        <input type="tel" name="telefone" id="tel" class="border-gradient" placeholder="Telefone" required>
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" class="border-gradient" placeholder="E-mail" required>
+                    </div>
+                    <div>
+                        <textarea name="txtArea" id="txtArea" class="border-gradient" cols="30" rows="10" placeholder="Mensagem" required></textarea>
+                    </div>
+                   
+                    <div>
+                        <input type="submit" value="Enviar" name="enviar" id="enviar" class="border-gradient">
+                    </div>
+                </form>
+            </div>  
+        </section>
     </section>
     
     <script src="../../public/scripts/works-images.js"></script>

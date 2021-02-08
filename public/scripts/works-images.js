@@ -1,6 +1,6 @@
 
 // Ao clicar nas opções do menu a cor altera
-let menuOption = document.querySelectorAll('a');
+let menuOption = document.querySelectorAll('a')
 
 for (let i = 0; i < menuOption.length; i++) {
     let el = menuOption[i];
@@ -18,6 +18,7 @@ function navigation(){
     var pageBanner = document.getElementById('banners')
     var pageLayout = document.getElementById('layouts')
     var pageCards = document.getElementById('cards')
+    var pageContact = document.getElementById('contacts')
     let titulo = document.getElementById('titulo')
     let options = document.getElementsByName('options')
     
@@ -35,24 +36,35 @@ function navigation(){
         pageBanner.style.display = "none";
         pageCards.style.display = "none";
         pageLayout.style.display = "none";
+        pageContact.style.display = "none";
     }else if(menu == "banner"){
         titulo.innerHTML = "Banner";
         pageBanner.style.display = "flex";
         pageLogo.style.display = "none";
         pageCards.style.display = "none";
         pageLayout.style.display = "none";
+        pageContact.style.display = "none";
     }else if(menu == "layout"){
         titulo.innerHTML = "Layout";
         pageLayout.style.display = "flex";
         pageLogo.style.display = "none";
         pageBanner.style.display = "none";
         pageCards.style.display = "none";
+        pageContact.style.display = "none";
     }else if(menu == "card"){
         titulo.innerHTML = "Cards";
         pageCards.style.display = "flex";
         pageLogo.style.display = "none";
         pageBanner.style.display = "none";
         pageLayout.style.display = "none";
+        pageContact.style.display = "none";
+    }else if(menu == "contact"){
+        titulo.innerHTML = "Contact";
+        pageContact.style.display = "flex";
+        pageLogo.style.display = "none";
+        pageBanner.style.display = "none";
+        pageLayout.style.display = "none";
+        pageCards.style.display = "none";
     }
 
 }

@@ -1,6 +1,7 @@
 /* título da opção que o usuário clicar */
 header {
     padding: 5rem;
+    animation: titulo .3s ease-in;
 }
 header h2 {
     display: inline;
@@ -8,31 +9,52 @@ header h2 {
 }
 
 /* container das imagens */
-article{
+section.works{
     margin: 0 auto;
-}
-.works {
+    width: 100%;
     overflow: auto;
 }
 .works .container {
-    display: flex;
     flex-wrap: wrap;
-    max-width: 1400px;
-    width: 100%;
     padding: 0 4rem 4rem 4rem;
+    display: flex;
 }
 .works > .container > .work-image {
     flex: 1 1 300px;
     margin: 10px;
-    text-align: center;    
+    text-align: center;  
+    animation: side .5s ease-in;
+}
+
+/* modal */
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.8s linear, opacity 0.5s linear;
+}
+.modal_active{
+    visibility: visible;
+    opacity: 1;
+}
+.modal_disabled{
+    visibility: hidden;
+    opacity: 0;
+}
+.modal_content {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
 }
 #modal_img {
     max-width: 65vw;
     transform: scale(0);
     transition: all linear .3s;
-}
-.modal_active #modal_img{
-    transform: scale(1);
 }
 .small_img {
     width: 350px;
@@ -45,21 +67,8 @@ article{
     filter: grayscale(100%);
     transform: scale(.97);
 }
-.modal{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0,0,0,.7);
-    position: fixed;
-    z-index: 1;
-    opacity: 0;
-    visibility: hidden;
-    transition: visibility 0.8s linear, opacity 0.5s linear;
-}
-.modal_content {
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    height: 100vh;
+.modal_active #modal_img{
+    transform: scale(1);
 }
 #bt_close{
     color: #fff;
@@ -76,19 +85,10 @@ article{
 #bt_close:hover{
     background-color: #FD7A7A;
 }
-.modal_active{
-    visibility: visible;
-    opacity: 1;
-}
-.modal_disabled{
-    visibility: hidden;
-    opacity: 0;
-}
-
-
 #banners,
 #cards,
-#layouts{
+#layouts,
+#contacts{
     display: none;
 }
 
